@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Tutorial_01_GettingStarted - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP1C8.tmp" with contents
+[
+/nologo /MTd /W4 /Gm /GX /ZI /Od /I ".\\" /I "..\toolbox" /I "..\common" /I "..\\" /I "..\..\sdk" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/tutorial1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\newtonSDK\samples\tutorial_01_GettingStarted\tutorial.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP1C8.tmp" 
+Creating temporary file "C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP1C9.tmp" with contents
+[
+newton.lib GLAUX.LIB glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Tutorial_01_GettingStarted.pdb" /debug /machine:I386 /nodefaultlib:"libc" /out:"..\bin\Tutorial_01_GettingStarted.exe" /pdbtype:sept /libpath:"..\gl" /libpath:"..\..\sdk\dll" 
+.\Debug\dBaseHierarchy.obj
+.\Debug\dChunkParsel.obj
+.\Debug\dCRC.obj
+.\Debug\dGeometry.obj
+.\Debug\dMatrix.obj
+.\Debug\dQuaternion.obj
+.\Debug\dSceneNode.obj
+.\Debug\dTree.obj
+.\Debug\HiResTimer.obj
+.\Debug\OpenGlUtil.obj
+.\Debug\RenderPrimitive.obj
+.\Debug\tutorial.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP1C9.tmp"
+<h3>Output Window</h3>
+Compiling...
+tutorial.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP1CA.bat" with contents
+[
+@echo off
+xcopy "..\gl\*.dll" "..\bin\*.*"  /F /Y
+xcopy "..\..\sdk\dll\*.dll" "..\bin\*.*"  /F /Y
+]
+Creating command line "C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP1CA.bat"
+
+C:\newtonSDK\samples\gl\glew32.dll -> C:\newtonSDK\samples\bin\glew32.dll
+C:\newtonSDK\samples\gl\Glut32.dll -> C:\newtonSDK\samples\bin\Glut32.dll
+2 File(s) copied
+C:\newtonSDK\sdk\dll\Newton.dll -> C:\newtonSDK\samples\bin\Newton.dll
+1 File(s) copied
+
+
+
+<h3>Results</h3>
+Tutorial_01_GettingStarted.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

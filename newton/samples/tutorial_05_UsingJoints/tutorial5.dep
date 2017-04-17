@@ -1,0 +1,86 @@
+# Microsoft Developer Studio Generated Dependency File, included by tutorial5.mak
+
+..\common\GraphicSystem.cpp : \
+	"..\..\sdk\Newton.h"\
+	"..\common\dList.h"\
+	"..\common\GraphicSystem.h"\
+	"..\common\Matrix.h"\
+	"..\common\RenderPrimitive.h"\
+	"..\common\stdafx.h"\
+	"..\common\Vector.h"\
+	"..\gl\Glut.h"\
+	
+
+.\JointsTutorial.cpp : \
+	"..\..\sdk\Newton.h"\
+	"..\common\dList.h"\
+	"..\common\Matrix.h"\
+	"..\common\OpenGlUtil.h"\
+	"..\common\RenderPrimitive.h"\
+	"..\common\stdafx.h"\
+	"..\common\Vector.h"\
+	"..\gl\Glut.h"\
+	".\JointsTutorial.h"\
+	".\Materials.h"\
+	".\tutorial.h"\
+	
+
+..\common\LevelPrimitive.cpp : \
+	"..\..\sdk\Newton.h"\
+	"..\common\dList.h"\
+	"..\common\LevelPrimitive.h"\
+	"..\common\Matrix.h"\
+	"..\common\OpenGlUtil.h"\
+	"..\common\RenderPrimitive.h"\
+	"..\common\stdafx.h"\
+	"..\common\Vector.h"\
+	"..\gl\Glut.h"\
+	
+
+.\Materials.cpp : \
+	"..\..\sdk\Newton.h"\
+	"..\common\dList.h"\
+	"..\common\Matrix.h"\
+	"..\common\stdafx.h"\
+	"..\common\Vector.h"\
+	".\Materials.h"\
+	
+
+..\common\OpenGlUtil.cpp : \
+	"..\..\sdk\Newton.h"\
+	"..\common\dList.h"\
+	"..\common\Matrix.h"\
+	"..\common\OpenGlUtil.h"\
+	"..\common\stdafx.h"\
+	"..\common\Vector.h"\
+	"..\gl\Glut.h"\
+	
+
+..\common\RenderPrimitive.cpp : \
+	"..\..\sdk\Newton.h"\
+	"..\common\dList.h"\
+	"..\common\GraphicSystem.h"\
+	"..\common\Matrix.h"\
+	"..\common\OpenGlUtil.h"\
+	"..\common\RenderPrimitive.h"\
+	"..\common\stdafx.h"\
+	"..\common\Vector.h"\
+	"..\gl\Glut.h"\
+	
+
+.\tutorial.cpp : \
+	"..\..\sdk\Newton.h"\
+	"..\common\dList.h"\
+	"..\common\GraphicSystem.h"\
+	"..\common\HiResTimer.h"\
+	"..\common\LevelPrimitive.h"\
+	"..\common\Matrix.h"\
+	"..\common\OpenGlUtil.h"\
+	"..\common\RenderPrimitive.h"\
+	"..\common\stdafx.h"\
+	"..\common\Vector.h"\
+	"..\gl\Glut.h"\
+	".\JointsTutorial.h"\
+	".\Materials.h"\
+	".\tutorial.h"\
+	

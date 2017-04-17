@@ -1,0 +1,209 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Tutorial_01_GettingStarted"=.\tutorial_01_GettingStarted\tutorial1.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_02_UsingCallbacks"=.\tutorial_02_UsingCallbacks\tutorial2.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_03_UsingCollisionTree"=.\tutorial_03_UsingCollisionTree\tutorial3.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_04_IntroductionToMaterials"=.\tutorial_04_IntroductionToMaterials\tutorial4A.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_05_UsingJoints"=.\tutorial_05_UsingJoints\tutorial5.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_06_UtilityFuntionality"=.\tutorial_06_UtilityFuntionality\tutorial6A.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_07_CharaterController"=.\tutorial_07_CharaterController\tutorial7.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_08_HeightFieldCollision"=.\tutorial_08_HeightFieldCollision\tutorial8A.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_09_SimpleVehicle"=.\tutorial_09_SimpleVehicle\tutorial9A.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_10_CustomJoints"=.\tutorial_10_CustomJoints\tutorial10.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_11_AdvancedJoints"=.\tutorial_11_AdvanceJoints\tutorial11.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorial_12_DistanceToPoint"=.\tutorial_12_DistanceToPoint\Tutorial12.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Tutorials"=.\Tutorials.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_01_GettingStarted
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_02_UsingCallbacks
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_03_UsingCollisionTree
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_04_IntroductionToMaterials
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_05_UsingJoints
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_06_UtilityFuntionality
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_07_CharaterController
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_08_HeightFieldCollision
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_09_SimpleVehicle
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_10_CustomJoints
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_11_AdvancedJoints
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Tutorial_12_DistanceToPoint
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

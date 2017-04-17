@@ -1,0 +1,135 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Tutorial_10_CustomJoints - Win32 DebugDouble--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP56.tmp" with contents
+[
+/nologo /MTd /W4 /GX /Zi /Od /I "..\..\sdk\customJoints" /I "..\toolbox" /I "..\common" /I "..\\" /I "..\..\sdk" /D "_DEBUG" /D "WIN32" /D "_CONSOLE" /D "_MBCS" /D "__USE_DOUBLE_PRECISION__" /Fp"DebugDouble/tutorial10.pch" /YX /Fo"DebugDouble/" /Fd"DebugDouble/" /FD /c 
+"C:\newtonSDK\sdk\customJoints\CustomBallAndSocket.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomConeLimitedBallAndSocket.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomCorkScrew.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomDryRollingFriction.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomGear.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomHinge.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomPoweredBallAndSocket.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomPulley.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomRayCastCar.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomSlider.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomUniversal.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomUpVector.cpp"
+"C:\newtonSDK\sdk\customJoints\CustomWormGear.cpp"
+"C:\newtonSDK\sdk\customJoints\NewtonCustomJoint.cpp"
+"C:\newtonSDK\samples\toolBox\dBaseHierarchy.cpp"
+"C:\newtonSDK\samples\toolBox\dChunkParsel.cpp"
+"C:\newtonSDK\samples\toolBox\dCRC.cpp"
+"C:\newtonSDK\samples\toolBox\dGeometry.cpp"
+"C:\newtonSDK\samples\toolBox\dMatrix.cpp"
+"C:\newtonSDK\samples\toolBox\dQuaternion.cpp"
+"C:\newtonSDK\samples\toolBox\dSceneNode.cpp"
+"C:\newtonSDK\samples\toolBox\dTree.cpp"
+"C:\newtonSDK\samples\tutorial_10_CustomJoints\CharaterControl.cpp"
+"C:\newtonSDK\samples\common\HiResTimer.cpp"
+"C:\newtonSDK\samples\tutorial_10_CustomJoints\JointsTutorial.cpp"
+"C:\newtonSDK\samples\common\LevelPrimitive.cpp"
+"C:\newtonSDK\samples\tutorial_10_CustomJoints\Materials.cpp"
+"C:\newtonSDK\samples\common\MousePick.cpp"
+"C:\newtonSDK\samples\common\OpenGlUtil.cpp"
+"C:\newtonSDK\samples\common\RenderPrimitive.cpp"
+"C:\newtonSDK\samples\tutorial_10_CustomJoints\tutorial.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP56.tmp" 
+Creating temporary file "C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP57.tmp" with contents
+[
+newton.lib GLAUX.LIB glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"DebugDouble/Tutorial_10_CustomJoints.pdb" /debug /machine:I386 /out:"..\bin\Tutorial_10_CustomJoints.exe" /libpath:"..\gl" /libpath:"..\..\sdk\dll_double" 
+.\DebugDouble\CustomBallAndSocket.obj
+.\DebugDouble\CustomConeLimitedBallAndSocket.obj
+.\DebugDouble\CustomCorkScrew.obj
+.\DebugDouble\CustomDryRollingFriction.obj
+.\DebugDouble\CustomGear.obj
+.\DebugDouble\CustomHinge.obj
+.\DebugDouble\CustomPoweredBallAndSocket.obj
+.\DebugDouble\CustomPulley.obj
+.\DebugDouble\CustomRayCastCar.obj
+.\DebugDouble\CustomSlider.obj
+.\DebugDouble\CustomUniversal.obj
+.\DebugDouble\CustomUpVector.obj
+.\DebugDouble\CustomWormGear.obj
+.\DebugDouble\NewtonCustomJoint.obj
+.\DebugDouble\dBaseHierarchy.obj
+.\DebugDouble\dChunkParsel.obj
+.\DebugDouble\dCRC.obj
+.\DebugDouble\dGeometry.obj
+.\DebugDouble\dMatrix.obj
+.\DebugDouble\dQuaternion.obj
+.\DebugDouble\dSceneNode.obj
+.\DebugDouble\dTree.obj
+.\DebugDouble\CharaterControl.obj
+.\DebugDouble\HiResTimer.obj
+.\DebugDouble\JointsTutorial.obj
+.\DebugDouble\LevelPrimitive.obj
+.\DebugDouble\Materials.obj
+.\DebugDouble\MousePick.obj
+.\DebugDouble\OpenGlUtil.obj
+.\DebugDouble\RenderPrimitive.obj
+.\DebugDouble\tutorial.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP57.tmp"
+<h3>Output Window</h3>
+Compiling...
+CustomBallAndSocket.cpp
+CustomConeLimitedBallAndSocket.cpp
+CustomCorkScrew.cpp
+CustomDryRollingFriction.cpp
+CustomGear.cpp
+CustomHinge.cpp
+CustomPoweredBallAndSocket.cpp
+CustomPulley.cpp
+CustomRayCastCar.cpp
+CustomSlider.cpp
+CustomUniversal.cpp
+CustomUpVector.cpp
+CustomWormGear.cpp
+NewtonCustomJoint.cpp
+dBaseHierarchy.cpp
+dChunkParsel.cpp
+dCRC.cpp
+dGeometry.cpp
+dMatrix.cpp
+dQuaternion.cpp
+dSceneNode.cpp
+dTree.cpp
+CharaterControl.cpp
+HiResTimer.cpp
+JointsTutorial.cpp
+LevelPrimitive.cpp
+Materials.cpp
+MousePick.cpp
+OpenGlUtil.cpp
+RenderPrimitive.cpp
+tutorial.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP59.bat" with contents
+[
+@echo off
+xcopy "..\gl\*.dll" "..\bin\*.*"  /F /Y
+xcopy "..\..\sdk\dll_double\*.dll" "..\bin\*.*"  /F /Y
+]
+Creating command line "C:\DOCUME~1\JULIOJ~1\LOCALS~1\Temp\RSP59.bat"
+
+C:\newtonSDK\samples\gl\glew32.dll -> C:\newtonSDK\samples\bin\glew32.dll
+C:\newtonSDK\samples\gl\Glut32.dll -> C:\newtonSDK\samples\bin\Glut32.dll
+2 File(s) copied
+C:\newtonSDK\sdk\dll_double\Newton.dll -> C:\newtonSDK\samples\bin\Newton.dll
+1 File(s) copied
+
+
+
+<h3>Results</h3>
+Tutorial_10_CustomJoints.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

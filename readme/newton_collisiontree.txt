@@ -1,0 +1,45 @@
+http://www.coniserver.net/ubb7/ubbthreads.php/ubb/showflat/Number/813785/site_id/1#import
+
+void newton_treecollisionaddlevel(NewtonCollision* treecollision)
+{
+	int numvertices;
+	int numfaces;
+	_VERTEX_ *pvertices;
+	short *pindices;
+	int *pattributes;
+	int i,j;
+	
+	LPD3DXMESH pmesh = (LPD3DXMESH)ent_getmesh(NULL, 0, 0);
+	for(j=0;pmesh!=NULL;j++)
+	{
+		numvertices = pmesh->GetNumVertices();
+		numfaces = pmesh->GetNumFaces();
+		
+		pmesh->LockVertexBuffer(0, (void**)&pvertices);
+		pmesh->LockIndexBuffer(0, (void**)&pindices);
+		pmesh->LockAttributeBuffer(0, &pattributes);
+		
+		// add triangles to collision tree
+		for(i = 0; i < numfaces; i++)
+		{	
+			float v[9];
+			v[0] = pvertices[pindices[(i*3)+2]].x * QUANTTOMETER;
+			v[1] = pvertices[pindices[(i*3)+2]].z * QUANTTOMETER;
+			v[2] = pvertices[pindices[(i*3)+2]].y * QUANTTOMETER;
+			v[3] = pvertices[pindices[(i*3)+1]].x * QUANTTOMETER;
+			v[4] = pvertices[pindices[(i*3)+1]].z * QUANTTOMETER;
+			v[5] = pvertices[pindices[(i*3)+1]].y * QUANTTOMETER;
+			v[6] = pvertices[pindices[(i*3)+0]].x * QUANTTOMETER;
+			v[7] = pvertices[pindices[(i*3)+0]].z * QUANTTOMETER;
+			v[8] = pvertices[pindices[(i*3)+0]].y * QUANTTOMETER;
+			NewtonTreeCollisionAddFace(treecollision, 3, v, 12, pattributes[i]);
+		}
+		free(pvertices);
+	
+		pmesh->UnlockVertexBuffer();
+		pmesh->UnlockIndexBuffer();
+		pmesh->UnlockAttributeBuffer();
+		
+		pmesh = (LPD3DXMESH)ent_getmesh(NULL, j, 0);
+	}
+}

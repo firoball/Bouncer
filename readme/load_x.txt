@@ -1,0 +1,55 @@
+http://www.toymaker.info/Games/html/load_x_simply.html
+
+Loading an .x file involves the use of the D3DX mesh object and its interfaces. As usual we must declare a mesh pointer.
+
+LPD3DXMESH mesh; // Our mesh object
+
+To load the X file we use a D3DX function called D3DXLoadMeshFromX. This function creates an instance of the mesh object and loads all the geometry. It flattens any frame hierarchy in the file and separates the data by material and texture. It stores it internally in what is known as a subset, each subset has a set of geometry that should be drawn using a certain texture and material. You have to maintain the materials and textures yourself, to access them you use a temporary material buffer. An example may explain this better:
+
+LPD3DXBUFFER materialBuffer;
+DWORD numMaterials;      // Note: DWORD is a typedef for unsigned long
+LPD3DXMESH mesh;
+
+// Load the mesh from the specified file
+HRESULT hr=D3DXLoadMeshFromX(filename, D3DXMESH_SYSTEMMEM,
+               gD3dDevice, NULL,
+               &materialBuffer,NULL, &numMaterials,
+               &mesh );
+
+Note: if the x file resides in memory you can use the equivalent function D3DXLoadMeshFromXInMemory
+
+The above creates an instance of the mesh object and loads the file geometry into the mesh object. Additionally it takes a pointer to a variable that will be filled with the number of materials in the mesh (numMaterials) and a pointer to a material buffer (materialBuffer). This material buffer provides us with access to the materials and textures in the .x file. We need to loop through this material buffer extracting the material properties and texture filenames and load the textures our selves.
+
+D3DXMATERIAL* d3dxMaterials = (D3DXMATERIAL*)materialBuffer->GetBufferPointer();
+
+The above is a bit of a nasty cast required to get the buffer pointer to be a pointer to D3DXMATERIAL. Don't get confused between the material buffer above with type D3DXMATERIAL and the material used before rendering (D3DMATERIAL9). The above is simply a .x file buffer that we extract the information from into our own materials.
+
+The next step is to create two arrays to hold our material and texture pointers. When creating a class to load .x files these variables should be made member variables of the class:
+
+D3DMATERIAL9 *meshMaterials = new D3DMATERIAL9[numMaterials];
+LPDIRECT3DTEXTURE9 *meshTextures = new LPDIRECT3DTEXTURE9[numMaterials];
+
+Now we need to loop through the materials held in the .x file material buffer and copy them into our material array. We also must load the textures (if provided) and store pointers to these textures in our texture array. Remember a .x file may have many materials and textures. You cannot assume that every material will have an associated texture, some may have no texture at all where by your texture pointer should be set to NULL.
+
+for (DWORD i=0; i<m_numMaterials; i++)
+{
+
+       // Copy the material
+       meshMaterials[i] = d3dxMaterials[i].MatD3D;
+
+       // Set the ambient color for the material (D3DX does not do this)
+       meshMaterials[i].Ambient = meshMaterials[i].Diffuse;
+        
+       // Create the texture if it exists - it may not
+       meshTextures[i] = NULL;
+       if (d3dxMaterials[i].pTextureFilename)
+         D3DXCreateTextureFromFile(gD3dDevice, d3dxMaterials[i].pTextureFilename,   &meshTextures[i]) 
+
+}
+ 
+
+Finally since we are now done with the .x file material buffer we need to release it:
+
+pD3DXMtrlBuffer->Release();
+
+Note: the code above does no error checking on return HRESULTS. You must check the return values for errors especially when you load the texture as it may be it cannot be found (this is a common cause of problems when people first use .x files). It may be that you need to alter the path contained in the texture filename to your own data path. See String Handling.
